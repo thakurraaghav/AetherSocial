@@ -4,7 +4,7 @@ import { api } from '../lib/axios';
 import { DndContext, useDraggable, useDroppable, PointerSensor, useSensor, useSensors, DragOverlay } from '@dnd-kit/core';
 import type { DragEndEvent, DragStartEvent } from '@dnd-kit/core';
 import toast from 'react-hot-toast';
-import { Loader2, X, Trash2, Sparkles } from 'lucide-react';
+import { Loader2, Trash2, Sparkles } from 'lucide-react';
 import PostPreviewModal from './PostPreviewModal';
 
 export interface Post {
@@ -192,7 +192,6 @@ export default function CalendarGrid() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedPost, setSelectedPost] = useState<Post | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeId, setActiveId] = useState<string | null>(null);
   const [activeWidth, setActiveWidth] = useState<number | null>(null);
 

@@ -3,7 +3,7 @@ import { useAuthStore } from '../store/useAuthStore';
 import { api } from '../lib/axios';
 
 export default function Sidebar() {
-  const { user, setUser } = useAuthStore();
+  const { setUser } = useAuthStore();
   const navigate = useNavigate();
   const location = useLocation();
 

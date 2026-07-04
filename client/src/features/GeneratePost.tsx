@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { api } from '../lib/axios';
 import toast from 'react-hot-toast';
-import { Loader2, Sparkles, Lightbulb, ChevronDown } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
 
 export default function GeneratePost() {
   const location = useLocation();
