@@ -1,0 +1,5 @@
+# IDE / System
+.vscode/
+.gemini/
+.DS_Store
+*.log

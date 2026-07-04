@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raaghav Thakur - Resume</title>
+    <style>
+        /* CSS reset and base styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.2;
+            /* Tighter line height */
+            color: #000;
+            background-color: #f4f4f5;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Page layout */
+        .resume-container {
+            width: 210mm;
+            min-height: 297mm;
+            background: #fff;
+            padding: 10mm;
+            /* Reduced margins to 10mm */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @page {
+            size: A4;
+            margin: 10mm;
+        }
+
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+                display: block;
+            }
+
+            .resume-container {
+                width: 100%;
+                min-height: auto;
+                padding: 0;
+                box-shadow: none;
+            }
+        }
+
+        /* Typography */
+        h1 {
+            text-align: center;
+            font-size: 18pt;
+            /* Reduced from 22pt */
+            font-weight: normal;
+            margin-bottom: 2px;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 9pt;
+            /* Reduced */
+            margin-bottom: 6px;
+        }
+
+        .contact-info a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* Section styling */
+        .section-title {
+            font-size: 10.5pt;
+            /* Reduced */
+            font-weight: bold;
+            margin-top: 6px;
+            margin-bottom: 3px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 1px;
+        }
+
+        /* Summary */
+        .summary {
+            font-size: 9pt;
+            /* Reduced */
+            text-align: justify;
+            margin-bottom: 6px;
+        }
+
+        /* Items (Experience, Projects, Education) */
+        .item {
+            margin-bottom: 6px;
+        }
+
+        .item-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .company-name,
+        .project-name {
+            font-weight: bold;
+            font-size: 9.5pt;
+        }
+
+        .location,
+        .date {
+            font-size: 9pt;
+        }
+
+        .role,
+        .degree {
+            font-style: italic;
+            font-size: 9.5pt;
+        }
+
+        .tech-stack {
+            font-style: italic;
+            font-size: 9pt;
+            text-align: right;
+        }
+
+        /* Links inside projects */
+        .project-links a {
+            color: #000;
+            text-decoration: underline;
+            font-size: 9pt;
+            font-weight: normal;
+        }
+
+        /* Bullet points */
+        ul {
+            padding-left: 16px;
+            font-size: 9pt;
+            /* Reduced */
+            margin-top: 2px;
+        }
+
+        li {
+            margin-bottom: 1px;
+            text-align: justify;
+        }
+
+        /* Skills section */
+        .skills-list {
+            font-size: 9pt;
+            /* Reduced */
+        }
+
+        .skills-list>div {
+            margin-bottom: 1px;
+        }
+
+        .skills-category {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-container">
+        <!-- Header -->
+        <h1>Raaghav Thakur</h1>
+        <div class="contact-info">
+            Full Stack Developer | Hoshiarpur, Punjab<br>
+            +91 9877689015 | <a href="mailto:thakurraaghav2002@gmail.com">thakurraaghav2002@gmail.com</a> | <a
+                href="https://linkedin.com/in/raaghav-thakur-06913a221">linkedin.com/in/raaghav-thakur-06913a221</a> |
+            <a href="https://github.com/thakurraaghav">github.com/thakurraaghav</a>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section-title">Professional Summary</div>
+        <div class="summary">
+            Ambitious Full Stack AI Developer specializing in building production-grade, intelligent software that
+            bridges modern web architecture and generative AI. Proven expertise in architecting scalable platforms using
+            the React/Node.js ecosystem, alongside engineering complex background job pipelines for high-performance LLM
+            integrations. Passionate about solving complex backend challenges, implementing secure authentication
+            systems, and delivering premium, highly responsive user experiences.
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section-title">Professional Experience</div>
+
+        <div class="item">
+            <div class="item-row">
+                <span class="company-name">Freelance Software Engineer</span>
+                <span class="location">Remote</span>
+            </div>
+            <div class="item-row">
+                <span class="role">Full Stack Developer</span>
+                <span class="date"><em>June 2024 &ndash; Present</em></span>
+            </div>
+            <ul>
+                <li>Shipped multiple end-to-end web applications and scalable REST APIs for clients, ensuring 100%
+                    on-time delivery and strict adherence to technical requirements.</li>
+                <li>Architected full-stack solutions using React, Node.js, and PostgreSQL, translating complex business
+                    logic into polished, performant user interfaces.</li>
+                <li>Managed the complete software development lifecycle independently, from requirements gathering and
+                    system design to production deployment and maintenance.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-row">
+                <span class="company-name">Lab Of Games</span>
+                <span class="location">Jalandhar, Punjab</span>
+            </div>
+            <div class="item-row">
+                <span class="role">Full Stack Developer</span>
+                <span class="date"><em>Sept 2024 &ndash; May 2025</em></span>
+            </div>
+            <ul>
+                <li>Developed and maintained highly responsive web applications using React, TypeScript, and Tailwind
+                    CSS, building reusable UI components that improved frontend user experience across multiple client
+                    projects.</li>
+                <li>Collaborated seamlessly across teams to integrate backend REST APIs and secure authentication
+                    systems into the client-facing architecture.</li>
+                <li>Leveraged modern web development pipelines including Vite, Node.js, and Express.js to optimize build
+                    times and server performance.</li>
+                <li>Participated actively in designing scalable and maintainable frontend architectures to support
+                    long-term feature expansion.</li>
+            </ul>
+        </div>
+
+        <!-- Projects -->
+        <div class="section-title">Projects</div>
+
+        <div class="item">
+            <div class="item-row">
+                <span>
+                    <span class="project-name">AetherSocial</span> &ndash; Full Stack AI SaaS
+                    <span class="project-links">| <a href="#">GitHub</a> | <a href="#">Live</a></span>
+                </span>
+                <span class="tech-stack">React, TypeScript, Node.js, PostgreSQL, BullMQ, Groq</span>
+            </div>
+            <ul>
+                <li>Architected a full-stack social media management platform that leverages Groq API and SerpAPI to
+                    generate highly targeted, timely content ideas based on live industry trends.</li>
+                <li>Engineered a non-blocking background job queue using BullMQ and Redis to handle LLM generation,
+                    ensuring 100% UI responsiveness during heavy processing.</li>
+                <li>Developed an interactive, drag-and-drop content calendar scheduling system using @dnd-kit and React
+                    Portals.</li>
+                <li>Implemented a secure, JWT-based authentication system and global state management using Zustand.
+                </li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-row">
+                <span>
+                    <span class="project-name">Recruit AI</span> &ndash; AI Interview Simulator
+                    <span class="project-links">| <a
+                            href="https://github.com/thakurraaghav/ai-interview-frontend">GitHub</a> | <a
+                            href="https://recruitaifrontend.netlify.app/">Live</a></span>
+                </span>
+                <span class="tech-stack">React, Tailwind, Express.js, MongoDB, Groq API</span>
+            </div>
+            <ul>
+                <li>Built an AI-powered mock interview platform featuring real-time voice conversations using advanced
+                    speech-to-text and text-to-speech pipelines.</li>
+                <li>Integrated Groq cloud AI models to simulate senior-level technical interviewers capable of
+                    generating dynamic, context-aware interview questions.</li>
+                <li>Designed responsive frontend interfaces utilizing React.js, Tailwind CSS, and Framer Motion to
+                    deliver a smooth and engaging user experience.</li>
+                <li>Implemented backend services using Node.js, Express.js, and MongoDB for scalable data handling and
+                    interview record persistence.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-row">
+                <span>
+                    <span class="project-name">GymAi</span> &ndash; AI-Powered Workout Planner
+                    <span class="project-links">| <a href="#">GitHub</a> | <a href="#">Live</a></span>
+                </span>
+                <span class="tech-stack">React, Node.js, Express, REST APIs, Generative AI</span>
+            </div>
+            <ul>
+                <li>Developed an AI-powered fitness web application that generates personalized workout plans
+                    dynamically tailored to user goals, schedules, and available equipment.</li>
+                <li>Constructed robust REST APIs for workout generation and secure user profile management.</li>
+            </ul>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-list">
+            <div><span class="skills-category">Languages:</span> JavaScript, TypeScript, Python, Java, C++, SQL,
+                HTML/CSS</div>
+            <div><span class="skills-category">Backend:</span> Node.js, Express.js, Prisma ORM, BullMQ</div>
+            <div><span class="skills-category">Frontend:</span> React.js, Tailwind CSS, Framer Motion, Zustand</div>
+            <div><span class="skills-category">Databases:</span> PostgreSQL (Supabase), MongoDB, Redis</div>
+            <div><span class="skills-category">Tools & Platforms:</span> Git/GitHub, Docker, AWS/GCP, Vite, Postman
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section-title">Education</div>
+        <div class="item" style="margin-bottom: 0;">
+            <div class="item-row">
+                <span class="company-name">GNA University</span>
+                <span class="date"><em>2021 &ndash; 2025 (Expected)</em></span>
+            </div>
+            <div class="item-row">
+                <span class="degree">B.Tech in Computer Science and Engineering (CGPA: 6.7)</span>
+                <span class="location">Phagwara, Punjab</span>
+            </div>
+            <div style="font-size: 9.5pt; margin-top: 3px;">
+                Coursework on Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems,
+                Operating Systems, Computer Networks.
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

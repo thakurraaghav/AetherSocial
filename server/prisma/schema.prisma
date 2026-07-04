@@ -1,0 +1,40 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id               String           @id @default(uuid())
+  email            String           @unique
+  passwordHash     String
+  createdAt        DateTime         @default(now())
+  businessProfile  BusinessProfile?
+  posts            Post[]
+}
+
+model BusinessProfile {
+  id               String   @id @default(uuid())
+  userId           String   @unique
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  category         String   // e.g., "SaaS", "Local Retail"
+  brandName        String
+  coreOffering     String
+  targetAudience   String
+  brandPersonality String   // e.g., "Professional", "Quirky"
+}
+
+model Post {
+  id               String   @id @default(uuid())
+  userId           String
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  targetPlatform   String   // "INSTAGRAM", "LINKEDIN", "X"
+  textContent      String?  // Generated caption
+  imageUrl         String?  // URL from image generation API
+  scheduledAt      DateTime? // Stored in UTC
+  status           String   @default("DRAFT") // "DRAFT", "SCHEDULED", "PUBLISHED"
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
